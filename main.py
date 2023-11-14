@@ -24,8 +24,19 @@ def dashed_line():
         tita.forward(10)
 
 
+def draw_shape():
+    x = 3
+    while x < 9:
+
+        for _ in range(x):
+            tita.pensize(3)
+            tita.forward(100)
+            tita.right(360 / x)
+        x += 1
+
+
 # dashed_line()
 # square(x=100)
-
+# draw_shape()
 screen = Screen()
 screen.exitonclick()
